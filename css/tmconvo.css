@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+
+}
+
+header{
+
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../6.jpg);
+	height: 250vh;
+	background-size: auto;
+	background-position: center;
+	background-image: scroll;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px; 
+
+}
+
+ul li{
+
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 2px 5px;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+}
+
+ul li a:hover{
+	background-color: limegreen;
+	color: black; 
+}
+
+ul li.active a{
+	background-color: limegreen;
+	color: black; 
+}
+.logo img{
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.demobox{
+	position: absolute;
+	top: 20%;
+	left: 17%;
+	transform: translate(-10%,-10%);
+	color: white;
+	background-color: navy;
+	margin: 20px;
+	padding: 20px;
+
+}
+
+
+.pc-tab>input,
+.pc-tab section>div{
+	display: none;
+	transition: 0.1s ease;
+
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4,
+#tab5:checked ~ section .tab5,
+#tab6:checked ~ section .tab6,
+#tab7:checked ~ section .tab7{
+	display: inline-block;
+}
+
+*,*:after, *:before {
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #ecf0f1;
+	font-family: 'lato', sans-serif;
+
+}
+
+
+
+.pc-tab{
+	width: 100%;
+	max-width: 700px;
+	margin: 0px;
+}
+
+.pc-tab ul{
+	list-style-type:block;
+	margin-top: 30%;
+
+}
+
+.pc-tab ul li label{
+	float: right;
+	padding: 15px 25px;
+	border:1px solid #ddd;
+	border-bottom: 0;
+	background-color: #eeeeee;
+	color: #444;
+
+}
+
+.pc-tab ul li label:hover{
+	background-color: #ddd;
+
+}
+
+.pc-tab ul li label:active{
+	background-color: #fff;
+
+}
+.pc-tab ul li:not(:last-child) label{
+	border-right-width: 0;
+}
+
+.pc-tab section{
+	clear: both;
+}
+.pc-tab section{
+	padding: 20px;
+	border:1px solid #ddd;
+	background-color: #fff;
+	line-height: 1.5em;
+	letter-spacing: 0.5px;
+	color:#444; 
+}
+
+.pc-tab section div h2{
+	margin: 25px;
+	letter-spacing: 1px;
+	color:#34495e;
+}
+
+#tab1;checked ~ nav .tab1 label,
+#tab2;checked ~ nav .tab2 label,
+#tab3;checked ~ nav .tab3 label,
+#tab4;checked ~ nav .tab4 label,
+#tab5;checked ~ nav .tab5 label,
+#tab6;checked ~ nav .tab6 label,
+#tab7;checked ~ nav .tab7 label{
+	background-color: #fff;
+	color:#111;
+	position: left;
+
+}
+
+.sub_top .breadcrumb{
+	position: absolute;
+	right: 12px;
+	top: 27px;
+	text-align: right;
+}
+
+#tab1;checked ~ nav .tab1 label:after,
+#tab2;checked ~ nav .tab2 label:after,
+#tab3;checked ~ nav .tab3 label:after,
+#tab4;checked ~ nav .tab4 label:after,
+#tab5;checked ~ nav .tab5 label:after,
+#tab6;checked ~ nav .tab6 label:after,
+#tab7;checked ~ nav .tab7 label:after{
+	content: " ";
+	display: block;
+	position: relative;
+	height: 2px;
+	width: 100px;
+	background-color: #fff;
+	left: 0;
+	bottom: -1px;
+	
+}
